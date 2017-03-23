@@ -39,3 +39,31 @@ use rednet control 2 to check for the whole connection chain
 if rednet 6 gives output signal but no sound CHECK COAXIAL CABLE
 
 
+
+#IOSONO update for phosphotron
+Some information was given up here, but again short summary and some sidenotes
+##Dante Virtual Souncard
+make sure your PC has a fixed IP (192.168.1.11)
+64x64 channels
+##Dante Controller
+Load correct patch and check flow:
+PC/Mac ==> Rednet 6 ==> RedNet2_1/2/3/4
+##Midi2IOsono
+broncode at GIT, also  template for the phospotron setup
+in this template: midi cc 10 = x, 11 = y, 12 = z
+##Rednet2 Control software
+Check for RN6 to be master
+furthermore monitoring tool
+##Ableton Live
+audiosettings: (CTRL+,) input & output Dante Virtual Soundcard
+Output config: make sure all outputs as mono, as well 1/2 stereo
+Midi: all outputs to midi2Iosono (if not there, midi2iosono not running or crashed)
+
+##IOSono software
+Password symbol Iosono
+
+Run correct patch
+
+I/O Ctrl: MADI inputs available?
+Check third horizontal menu for monitoring of soundobject placement
+
